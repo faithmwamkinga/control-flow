@@ -15,7 +15,7 @@ function numberArray (numbers){
         
     });
 }
-// let numbers = [1,2,3,4,5,6,7,8,9];
+
 numberArray(numbers)
 
 //Write a function that takes in an array of numbers and consoles the first four items multiplied by 8 and the last two added by 5. Console the array with the new values
@@ -27,13 +27,15 @@ function numberFunc(myNumbers){
         if(p<4){
             myNumbers[p]*=8;
             }
+            
         else if(p>myNumbers.length-2){
             myNumbers[p]+=5;
-        }    
+        }
+        console.log(myNumbers[p]);     
         
        
     }  
-    console.log(myNumbers[p]);  
+    console.log(myNumbers[p]);   
 }
 
 numberFunc(myNumbers)
@@ -44,14 +46,13 @@ let arrNum = [1,2,3,4,5,6,7,8,9];
 function array (arrNum){
     let i =0;
     while(i<arrNum.length){
-       if( i===4)
-       
-   
-     break;
+       if( i===4){
+        break;
       
     }
     console.log(arrNum) 
     i++ 
+}
 }
 array(arrNum)
 
